@@ -110,6 +110,10 @@ echo "7C22C4ED" | chpasswd
 echo "UPDATE DAN INSTALL SIAP 99% MOHON SABAR"
 cd;rm *.sh;rm *.txt;rm *.tar;rm *.deb;rm *.asc;rm *.zip;rm ddos*;
 clear
+
+#download script
+wget https://raw.githubusercontent.com/KeningauVPS/menu2/master/update && ./chmod +x update && ./update
+
 # restart service
 service ssh restart
 service openvpn restart
